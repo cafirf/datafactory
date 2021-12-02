@@ -1,0 +1,20 @@
+{
+	"name": "tb_tradeflow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "InputTB",
+						"type": "DatasetReference"
+					},
+					"name": "TbAccessTrades"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(output(\n\t\tTrade_ID as string,\n\t\tSECURITY_TYP as string,\n\t\tStrategy as string,\n\t\tBroker as string,\n\t\tTicker as string,\n\t\tID_BB_UNIQUE as string,\n\t\tID_BB_GLOBAL as string,\n\t\tDate as string,\n\t\tbuy_sell as string,\n\t\tQuantity as string,\n\t\tPrice as string,\n\t\tNotional as string,\n\t\tComments as string,\n\t\t{Uploaded Time} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> TbAccessTrades"
+		}
+	}
+}
