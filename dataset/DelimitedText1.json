@@ -18,6 +18,63 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Trade_ID",
+				"type": "String"
+			},
+			{
+				"name": "SECURITY_TYP",
+				"type": "String"
+			},
+			{
+				"name": "Strategy",
+				"type": "String"
+			},
+			{
+				"name": "Broker",
+				"type": "String"
+			},
+			{
+				"name": "Ticker",
+				"type": "String"
+			},
+			{
+				"name": "ID_BB_UNIQUE",
+				"type": "String"
+			},
+			{
+				"name": "ID_BB_GLOBAL",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "buy_sell",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Price",
+				"type": "String"
+			},
+			{
+				"name": "Notional",
+				"type": "String"
+			},
+			{
+				"name": "Comments",
+				"type": "String"
+			},
+			{
+				"name": "Uploaded Time",
+				"type": "String"
+			}
+		]
 	}
 }
