@@ -1,0 +1,9 @@
+{
+	"name": "testaccesshnv",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3134fb6e-39cc-4253-89e7-8e5cb2a6e4d2",
+		"tenantId": "5d4fff75-6505-4c75-8ad4-03a19b3ee061"
+	}
+}
